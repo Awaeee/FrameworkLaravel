@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\TestController;
+use App\Http\Controllers\TaskController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +18,42 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Задание 1
+
+
+
+
+//Задание от 26.04.22
+
+Route::get('my-route', [TestController::class, 'lessonOne']);
+Route::get('data', [TestController::class, 'lessonTow']);
+
+
+Route::get('love', [TaskController::class, 'TaskOne']);
+
+Route::get('2/{name}', [TaskController::class, 'TaskTwo']);
+Route::get('3/{name}/{fruct}', [TaskController::class, 'TaskThree']);
+Route::get('4/', [TaskController::class, 'TaskFive']);
+Route::get('5/{a}/{b}', [TaskController::class, 'TaskFive']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//*Задание 1
 Route::get('my-name', function () {
     return ('Кайзерова Анна Евгеньевна');
 });
@@ -53,6 +89,3 @@ Route::get('level/{lvl}', function ($lv) {
         echo 'Король!';
     }
 });
-//Задание 6
-
-
