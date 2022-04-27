@@ -23,21 +23,25 @@ Route::get('/', function () {
 
 
 //Задание от 26.04.22
-
 Route::get('my-route', [TestController::class, 'lessonOne']);
 Route::get('data', [TestController::class, 'lessonTow']);
 
-
+//шаг1
 Route::get('love', [TaskController::class, 'TaskOne']);
-
 Route::get('2/{name}', [TaskController::class, 'TaskTwo']);
 Route::get('3/{name}/{fruct}', [TaskController::class, 'TaskThree']);
-Route::get('4/', [TaskController::class, 'TaskFive']);
+Route::get('4/', [TaskController::class, 'TaskFour']);
 Route::get('5/{a}/{b}', [TaskController::class, 'TaskFive']);
+Route::get('6/', [TaskController::class, 'TaskSix']);
+//шаг4
+Route::get('template/{detach}', [TaskController::class, 'lessonTemplateOne']);
 
-
-
-
+//Задагия
+Route::get('policy', [TaskController::class, 'policy']);
+Route::get('book', [TaskController::class, 'book']);
+Route::get('li', [TasKController::class, 'li']);
+Route::get('div', [TasKController::class, 'div']);
+Route::get('span', [TaskController::class, 'span']);
 
 
 
