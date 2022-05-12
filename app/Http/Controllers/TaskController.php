@@ -93,4 +93,9 @@ class TaskController extends Controller
         $var_span = ['1', '2', '3'];
         return view('span')->with('var_span', $var_span);
     }
+//задание 12.05.2022
+    public function onepage()
+    {
+        return view('onepage');
+    }
 }

@@ -42,8 +42,8 @@ Route::get('book', [TaskController::class, 'book']);
 Route::get('li', [TasKController::class, 'li']);
 Route::get('div', [TasKController::class, 'div']);
 Route::get('span', [TaskController::class, 'span']);
-
-
+// задание 12.05.2022
+Route::get('onepage', [TaskController::class, 'onepage']);
 
 
 
